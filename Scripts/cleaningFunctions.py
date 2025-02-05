@@ -61,6 +61,6 @@ def normalize_text(df):
     for col in text_columns:
         df[col] = df[col].str.strip().str.lower().str.title()
 
-    print(f"text columns normalized successfully.")
+    print(f"Text columns normalized successfully.")
 
     return df
