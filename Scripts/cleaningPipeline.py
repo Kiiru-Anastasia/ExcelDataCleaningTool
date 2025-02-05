@@ -8,9 +8,10 @@ def cleaning_pipeline(file_path):
     df = read_excel(file_path)
 
     if df is not None:
-        df = normalize_column_names(df)
+        df = normalize_text(df)
         df = remove_duplicates(df)
-        df = handle_missing_values(df, method="fill", fill_value=0)
+        df = handle_missing_values(df, method="drop", fill_value=0)
+        df = handle_outliers(df)
 
         return df
     else:
