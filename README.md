@@ -19,18 +19,22 @@ To test the functionality thus far:
 
 ### Cleaning Functionalities Included
 **Normalization of Text Columns** 
+
 Changing data in all text columns to Title case.
 
 **Duplicates Removal**
+
 Removal of exact duplicates.
 
 **Handling missing values**
+
 Missing values are handled in one of three main methods:
 * 'drop' - removes missing values from the dataset.
 * 'fill' - replaces missing values with a provided 'fill_value'.
 * 'impute' - replaces missing values for numerical columns with either the 'median' or 'mean' provided as the 'impute_method'
 
 **Handling Outliers**
+
 Outliers in numerical columns are resolved using the inter quartile range (IQR) method.
 
 
